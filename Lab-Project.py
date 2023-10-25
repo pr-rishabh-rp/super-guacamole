@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
+from IPython.display import display
 
 # Retrieve the webpage
 url = "https://www.indiacustomercare.com/s-v-nit-surat-contact-no"
@@ -41,4 +42,6 @@ for table in tables:
     # applicable. So we drop the first row. :)
     df.drop(0, inplace=True)
 
-    print(df)
+    display(df)
+    print('')
+    print('')
